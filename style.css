@@ -1,0 +1,288 @@
+@keyframes vibrate_leg{
+	to{
+		transform: rotate(+30deg);
+	}
+
+}
+@keyframes vibrate_legr{
+	to{
+		transform: rotate(-30deg);
+	}
+
+}
+@keyframes changewidth{ /* For head */
+	from{
+		width:200px;
+	}
+	to{
+		width: 300px;
+	}
+}
+
+@keyframes vibrate{
+	from{
+		transform: rotate(-20deg);
+	}
+	to{
+		transform: rotate(+20deg);
+	}
+
+}
+
+@keyframes magnify{
+	100%{
+		transform: scale(1.2);
+	}
+}
+@keyframes vibrate_arm{
+	to{
+		transform: rotate(+90deg);
+	}
+
+}
+@keyframes vibrate_armr{
+	to{
+		transform: rotate(-90deg);
+	}
+
+}
+
+#ultimate{
+		border: outset;
+		margin: 50px;
+		margin-left: 400px;
+		margin-right: 400px;
+		border-width: 5px;
+	padding: 15px;
+
+	transition: border-width 0.6s ease-in-out;
+}
+
+#ultimate:hover ~ .robots .eyes{
+	animation: magnify 0.4s infinite linear alternate;
+
+}
+#ultimate:hover ~ .robots .left_arm{ 
+	 animation: vibrate_arm 0.1s infinite linear alternate;
+} 
+#ultimate:hover ~ .robots .right_arm{ 
+	 animation: vibrate_armr 0.1s infinite linear alternate;
+} 
+#ultimate:hover ~ .robots .head{
+	animation: changewidth 0.6s infinite alternate;
+	width: 300px;
+}
+#ultimate:hover ~ .robots .upper_body{
+	animation: vibrate 0.6s infinite linear alternate;
+}
+#ultimate:hover ~ .robots .right_leg{ 
+    animation: vibrate_legr 0.1s infinite linear alternate;
+}
+#ultimate:hover ~ .robots .left_leg{ 
+    animation: vibrate_leg 0.1s infinite linear alternate;
+}
+body{
+	background-image: linear-gradient(to right, #ffffff, #66ffff);
+}
+
+h1{
+	text-align: center; font-family: Indie Flower; color: #004d4d;
+		border: outset;
+		margin: 50px;
+		margin-left: 400px;
+		margin-right: 400px;
+		border-width: 5px;
+		border-radius: 25px;
+		border-color:  #008080;
+		transition: border-width 0.6s linear;
+}
+.text {
+	color: #008080;
+	text-align: center;
+	font-family: 'Indie Flower', sans-serif;
+	font-size: 3em;
+	font-style: italic;
+	border-bottom: 2px;
+	border-color: white;
+}
+
+.robots {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px;
+}
+.android{
+
+	margin:50px;
+}
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #5f93e8;
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+} 
+
+
+.eyes{
+	/*transition: all 1s alternate;*/
+}
+.eyes:hover {
+	animation: magnify 0.4s infinite linear alternate;
+}
+
+.head:hover {
+	animation: changewidth 0.6s infinite alternate;
+	width: 300px;
+  
+}
+.upper_body:hover{
+	animation: vibrate 0.6s infinite linear alternate;
+}
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+} 
+
+.right_arm { 
+	margin-left: 10px; 
+} 
+.left_arm:hover { 
+	 animation: vibrate_arm 0.1s infinite linear alternate;
+} 
+
+.right_arm:hover { 
+	 animation: vibrate_armr 0.1s infinite linear alternate;
+} 
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	display: flex;
+	margin: 0 auto;
+
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 45px; 
+} 
+
+.left_leg:hover {
+    animation: vibrate_leg 0.1s infinite linear alternate;
+}
+
+.right_leg{
+	margin-left: 30px;
+	
+}
+.right_leg:hover{ 
+    animation: vibrate_legr 0.1s infinite linear alternate;
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: #008080;  
+} 
+
+.left_eye { 
+	
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+background: linear-gradient(0deg, rgba(34,189,195,0.6643032212885154) 17%, rgba(79,71,55,1) 100%);
+  color: white;
+  text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #55ACEE;
+  color: white;
+}
+.fa-github {
+  background: #55ACEE;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #55ACEE;
+  color: white;
+}
+.fa-globe {
+  background: #55ACEE;
+  color: white;
+}
