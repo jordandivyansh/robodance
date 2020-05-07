@@ -1,4 +1,4 @@
-Dancing Robo Droids using only CSS from scratch.
+Dancing Robo Droids using only CSS.
 By Divyansh Kumar
 
 
