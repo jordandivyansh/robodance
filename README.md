@@ -10,4 +10,4 @@ Android Robot Dance using CSS.
 ### Usage
 - Clone the repo and run index.html or [RoboDance](https://github.com/jordandivyansh/robodance)
 
-#### [Divyansh Kumar](https://jordandivyansh.github.io/divyanshkumar)
+#### [Divyansh Kumar](https://jordandivyansh.github.io/robodance/)
