@@ -1,7 +1,7 @@
 # RoboDance
 Android Robot Dance using CSS.
 
-## Screenshots of running Calculator page
+## Screenshots of running Robo Droid page
 ![Robo](https://raw.githubusercontent.com/jordandivyansh/robodance/master/Screenshot%20(140).png)
 ### Built and Designed Using
 - HTML
